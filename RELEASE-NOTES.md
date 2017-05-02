@@ -15,6 +15,10 @@ word matching.
 
 * `--proximate=N` option
 
+# Bug fixes
+
+* Column numbers were not getting colorized in the output.  Added
+`--color-colno` option and `ACK_COLOR_COLNO` environment variable.
 
 # Incompatibilities with ack 2
 

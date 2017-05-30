@@ -16,10 +16,15 @@ install:
 
   - cpanm --installdeps .
 
+  - cpanm File::Next 
+
+  - cpanm Pod::Perldoc 
+
+  - cpanm --notest IO::Pty Test::Pod
 
 
 build_script:
 
   - perl Makefile.PL
 
-  - dmake test
+  - make fulltest
